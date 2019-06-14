@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-extensions = ['recommonmark']
+extensions = []
 templates_path = [
     '/home/docs/checkouts/readthedocs.org/readthedocs/templates/sphinx',
     'templates', '_templates', '.templates']
