@@ -6,7 +6,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/{{cookiecutter.github_username}}/{{cookiecutter.github_repository_name}}/badge.svg?branch=master)](https://coveralls.io/github/{{cookiecutter.github_username}}/{{cookiecutter.github_repository_name}}?branch=master)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Django.svg)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![PyPi wheel](https://pypip.in/wheel/drf-microservice/badge.svg)](https://pypi.python.org/pypi/drf-microservice/)
+[![PyPi wheel](https://pypip.in/wheel/cookiecutter-drf-microservice/badge.svg)](https://pypi.python.org/pypi/cookiecutter-drf-microservice/)
 
 
 # About {{cookiecutter.github_repository_name}}
