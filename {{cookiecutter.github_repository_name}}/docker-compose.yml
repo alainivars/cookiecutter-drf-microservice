@@ -1,0 +1,22 @@
+version: '2'
+# fisrt draft
+services:
+  postgres:
+    image: postgres:9.6
+  web:
+    restart: always
+    environment:
+      - SECRET_KEY=local
+      - ENABLE_DEBUG=1
+    image: web
+    build: ./
+    command: >
+      bash -c "sleep 5 &&
+               ./manage.py migrate &&
+               ./manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - ./:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres

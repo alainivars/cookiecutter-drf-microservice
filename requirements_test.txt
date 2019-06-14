@@ -1,0 +1,25 @@
+# test
+pygments>=2.4.2
+atomicwrites>=1.3.0  # pytest dependency
+attrs>=19.1.0  # pytest dependency
+more-itertools>=7.0.0  # pytest dependency
+pluggy>=0.12.0  # pytest dependency
+py==1.8.0  # pytest dependency
+pytest>=4.6.3
+pytest-django>=3.4.8
+
+# code quality
+pytest-pep8>=1.0.6
+pytest-cov
+coverage>=4.5.3
+pycodestyle
+
+# static documentation
+MarkupSafe>=1.1.1  # Jinja2 dependency
+Jinja2>=2.10.1  # sphinx dependency
+sphinx
+readthedocs-sphinx-ext
+chardet>=3.0.4  # requests dependency
+idna>=2.8  # requests dependency
+urllib3>=1.25.3  # request dependency
+requests>=2.22.0
