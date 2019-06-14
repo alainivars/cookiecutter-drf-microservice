@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 
 here = os.path.dirname(os.path.abspath(__file__))
-with open(os.path.join(here, 'README.md')) as f:
+with open(os.path.join(here, 'README.rst')) as f:
     long_description = f.read().strip()
 
 setup(
@@ -17,11 +17,11 @@ setup(
     license='Apache License 2.0',
     description='''
     Create a REST API endpoints with Authentication and Registration.
-    Read the README.md for more information.
+    Read the README.rst for more information.
     ''',
     packages=find_packages(),
     long_description=long_description,
-    long_description_content_type='text/markdown',
+    long_description_content_type='text/x-rst',
     keywords='''
     django rest auth registration rest-framework django-registration api docker cookiecuter tox pytest
     ''',
