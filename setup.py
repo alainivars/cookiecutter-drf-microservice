@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 
 here = os.path.dirname(os.path.abspath(__file__))
-with open(os.path.join(here, 'index.rst')) as f:
+with open(os.path.join(here, 'README.rst')) as f:
     long_description = f.read().strip()
 
 setup(
@@ -21,7 +21,7 @@ setup(
     ''',
     packages=find_packages(),
     long_description=long_description,
-    long_description_content_type='text/x-rst',
+    long_description_content_type='text/markdown',
     keywords='''
     django rest auth registration rest-framework django-registration api docker cookiecuter tox pytest
     ''',
