@@ -14,8 +14,8 @@ django-rest-auth==0.9.5
 # AWS
 docutils==0.14  # botocore dependency
 jmespath==0.9.4  # boto3 botocore dependency
-boto3==1.9.168
-botocore==1.12.168
+boto3==1.9.169
+botocore==1.12.169
 s3transfer==0.2.1
 
 # Dynamic Documentations
