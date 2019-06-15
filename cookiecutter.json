@@ -1,7 +1,7 @@
 {
     "github_username": "my-github-user-name",
     "github_repository_name": "drf-microservice",
-    "capitalized_var_name": "DRF_MiCROSERVICE",
+    "capitalized_var_name": "DRF_MICROSERVICE",
     "app_name": "my_api",
     "email": "my-email@my-domain.my",
     "description": "The description of my drf api"
