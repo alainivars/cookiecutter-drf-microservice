@@ -45,6 +45,7 @@ About cookiecutter-drf-microservice
 ====================================
 Cookiecutter-drf-microservice is a ready-to-use API skeleton generator:
     - generates it,
+And it help you to:
     - add your endpoints,
     - test it,
     - package it,

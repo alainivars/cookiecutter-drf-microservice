@@ -1,33 +1,5 @@
-#########################################################################
 Welcome to {{cookiecutter.github_repository_name}} website documentation!
 #########################################################################
-
-This document refers to version |release|
-
-.. warning::
-    Please note that this Alpha Project is documented poorly. If you have any questions please contact us via
-    {{cookiecutter.email}} - we'd love to update the documentation and answer your question!
-
-**************
-Contents
-**************
-
-.. toctree::
-    :maxdepth: 2
-
-
-
-**************************
-Indices and tables
-**************************
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
-
-Status!
-=======
 
 .. image:: https://api.travis-ci.org/alainivars/{{cookiecutter.github_repository_name}}.svg?branch=master
     :target: http://travis-ci.org/alainivars/{{cookiecutter.github_repository_name}}
@@ -73,6 +45,7 @@ About {{cookiecutter.github_repository_name}}
 =============================================
 {{cookiecutter.github_repository_name}} is a ready-to-use API skeleton:
     - `Cookiescutter-drf-microservice`_ generated it,
+And it help you to:
     - add your endpoints,
     - test it,
     - package it,
