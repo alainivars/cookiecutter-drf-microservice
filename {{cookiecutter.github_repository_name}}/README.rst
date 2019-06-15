@@ -1,5 +1,5 @@
-Welcome to cookiecutter-drf-microservice documentation!
-=======================================================
+Welcome to {{cookiecutter.github_repository_name}} documentation!
+=================================================================
 
 .. image:: https://api.travis-ci.org/alainivars/{{cookiecutter.github_repository_name}}.svg?branch=master
     :target: http://travis-ci.org/alainivars/{{cookiecutter.github_repository_name}}
@@ -57,7 +57,7 @@ Something disturb you in the code? Don't hesitate to open a an issue and contrib
 
 Releases Notes
 ==============
-    - 0.7.1: Remove all .md file, update the doc,
+    - 0.7.1: Transform all .md file in .rst, update the doc,
     - 0.7.0: `Cookiescutter-drf-microservice`_ got it own separate repository
     - 0.6.1: Update dependencies
     - 0.6.0: total refactoring for add cookiecutter

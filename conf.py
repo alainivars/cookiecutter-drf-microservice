@@ -9,7 +9,7 @@ source_suffix = {
     '.txt': 'markdown',
     '.md': 'markdown',
 }
-master_doc = 'index'
+master_doc = 'README'
 project = u'{{cookiecutter.github_repository_name}}'
 copyright = u'2017-2019'
 version = 'latest'
