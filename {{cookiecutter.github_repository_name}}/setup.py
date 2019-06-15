@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 
 here = os.path.dirname(os.path.abspath(__file__))
-with open(os.path.join(here, 'index.rst')) as f:
+with open(os.path.join(here, 'README.md')) as f:
     long_description = f.read().strip()
 
 setup(
@@ -17,11 +17,11 @@ setup(
     license='Apache License 2.0',
     description='''
     {{cookiecutter.description}}.
-    Read the README.rst for more information.
+    Read the README.md for more information.
     ''',
     packages=find_packages(),
     long_description=long_description,
-    long_description_content_type='text/x-rst',
+    long_description_content_type='text/markdown',
     keywords='''
     django rest auth registration rest-framework django-registration api docker cookiecuter tox pytest
     ''',
