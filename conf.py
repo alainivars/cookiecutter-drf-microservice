@@ -10,15 +10,15 @@ source_suffix = {
     '.md': 'markdown',
 }
 master_doc = 'README'
-project = u'{{cookiecutter.github_repository_name}}'
+project = u'cookiecutter-drf-microservice'
 copyright = u'2017-2019'
 version = 'latest'
 release = 'latest'
 exclude_patterns = ['_build']
 pygments_style = 'sphinx'
-htmlhelp_basename = '{{cookiecutter.github_repository_name}}'
+htmlhelp_basename = 'cookiecutter-drf-microservice'
 file_insertion_enabled = False
 latex_documents = [
-    ('index', '{{cookiecutter.github_repository_name}}.tex', u'{{cookiecutter.github_repository_name}} Documentation',
+    ('index', 'cookiecutter-drf-microservice.tex', u'cookiecutter-drf-microservice Documentation',
      u'', 'manual'),
 ]
