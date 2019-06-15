@@ -163,6 +163,7 @@ Then open ::
     http://127.0.0.1:8000/docs/
 
 .. image:: media/docs.png
+   :width: 640pt
 
 Testing
 =======
