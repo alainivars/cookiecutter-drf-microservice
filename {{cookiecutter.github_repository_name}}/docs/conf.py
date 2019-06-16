@@ -49,9 +49,9 @@ templates_path = [
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = [
     'links.inc',
-	'_build', 
-	'Thumbs.db', 
-	'.DS_Store'
+    '_build',
+    'Thumbs.db',
+    '.DS_Store'
 ]
 
 
