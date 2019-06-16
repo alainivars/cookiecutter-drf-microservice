@@ -59,7 +59,7 @@ Something disturb you in the code? Don't hesitate to open a an issue and contrib
 
 Releases Notes
 ==============
-    - 0.7.1: Transform all .md file in .rst, update the doc,
+    - 0.7.1: Remove all .md file, update the doc, the docker config file
     - 0.7.0: cookiecutter-drf-microservice got it own separate repository
     - 0.6.1: Update dependencies
     - 0.6.0: total refactoring for add cookiecutter
