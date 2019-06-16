@@ -1,3 +1,10 @@
+.. {{cookiecutter.github_repository_name}} documentation master file, created by
+   sphinx-quickstart on Sun Jun 16 17:55:07 2019.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+.. include:: links.inc
+
 Welcome to {{cookiecutter.github_repository_name}} documentation!
 =================================================================
 
@@ -41,8 +48,8 @@ Welcome to {{cookiecutter.github_repository_name}} documentation!
    :target: https://pypi.python.org/pypi/{{cookiecutter.github_repository_name}}/
    :alt: PyPi wheel
 
-About {{cookiecutter.github_repository_name}}
-=============================================
+What is Drf-microservice
+------------------------
 {{cookiecutter.github_repository_name}} is a ready-to-use API skeleton:
     - `Cookiescutter-drf-microservice`_ generated it,
 And you:
@@ -57,23 +64,26 @@ It sounds simple and it is. Take a look at `Drf-microservice`_ it's now generate
 
 Something disturb you in the code? Don't hesitate to open a an issue and contribute.
 
-`Releases notes`_
-
-Bugs and evolution policies
-===========================
-When you will find a bug or propose an evolution create a ticket on:
-
-- `Issue Cookiescutter-drf-microservice`_ if it's about the generation process
-- `Issue Drf-microservice`_ if it's about a functionality in the generated drf process
-
-Online documentation is here on `readthedoc`_
+Online documentation is here on `Readthedoc`_
 Online source code available on `Github`_
 
-.. _`Cookiescutter-drf-microservice`: https://github.com/alainivars/cookiecutter-drf-microservice
-.. _`{{cookiecutter.github_repository_name}}`: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.github_repository_name}}
-.. _`Issue Cookiescutter-drf-microservice`: https://github.com/alainivars/cookiecutter-drf-microservice/issues
-.. _`Issue Drf-microservice`: https://github.com/alainivars/drf-microservice/issues
-.. _`Issue {{cookiecutter.github_repository_name}}`: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.github_repository_name}}/issues
-.. _`Readthedoc`: https://{{cookiecutter.github_repository_name}}.readthedocs.io/en/latest/
-.. _`Github`: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.github_repository_name}}
-.. _`Releases notes`: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.github_repository_name}}/blob/master/docs/releases_notes.rst
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   functionalities
+   devops_tools
+   interact_with_api
+   testing
+   security_check
+   docker
+   aws
+
+   releases_notes 
+
+Indices and tables
+------------------
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
