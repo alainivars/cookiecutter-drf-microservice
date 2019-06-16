@@ -77,7 +77,7 @@ DEBUG = bool(int(os.getenv('ENABLE_DEBUG', 0)))
 # Allowed hosts
 ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(',')
 if DEBUG:
-    ALLOWED_HOSTS.extend(['127.0.0.1', 'localhost'])
+    ALLOWED_HOSTS.extend(['127.0.0.1', 'localhost', '0.0.0.0'])
 
 # Email
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -167,7 +167,10 @@ if TESTING:
     }
 else:
     if DEBUG:
-        DB_HOST = os.getenv('DB_HOST', '127.0.0.1')
+        if os.getenv('DOCKER_CONTAINER'):
+            DB_HOST = 'db'
+        else:
+            DB_HOST = os.getenv('DB_HOST', '127.0.0.1')
         DB_USER = os.getenv('DB_USER', 'user')
         DB_PASS = os.getenv('DB_PASS', 'passwd')
         DB_NAME = os.getenv('DB_NAME', 'project_db')
@@ -180,7 +183,10 @@ else:
             },
         }
     else:
-        DB_HOST = os.getenv('DB_HOST', '127.0.0.1')
+        if os.getenv('DOCKER_CONTAINER'):
+            DB_HOST = 'db'
+        else:
+            DB_HOST = os.getenv('DB_HOST', '127.0.0.1')
         DB_USER = os.getenv('DB_USER', 'user')
         DB_PASS = secrets.get('db_password', 'passwd')
         DB_NAME = os.getenv('DB_NAME', 'project_db')
@@ -226,6 +232,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static')
 STATIC_URL = '/static/'
 
 # Some media files if you need it else remove it

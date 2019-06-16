@@ -11,6 +11,7 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
         fields = ('url', 'username', 'email', 'groups')
+        read_only_fields = ('username', )
 
     # def create(self, validated_data):
     #     user = User(
