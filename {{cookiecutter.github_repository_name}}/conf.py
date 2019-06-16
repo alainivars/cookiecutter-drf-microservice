@@ -18,7 +18,7 @@ exclude_patterns = ['_build']
 pygments_style = 'sphinx'
 htmlhelp_basename = '{{cookiecutter.github_repository_name}}'
 file_insertion_enabled = False
-#latex_documents = [
-#    ('index', '{{cookiecutter.github_repository_name}}.tex', u'{{cookiecutter.github_repository_name}} Documentation',
-#     u'', 'manual'),
-#]
+latex_documents = [
+    ('index', '{{cookiecutter.github_repository_name}}.tex', u'{{cookiecutter.github_repository_name}} Documentation',
+     u'', 'manual'),
+]
