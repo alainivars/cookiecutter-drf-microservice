@@ -63,7 +63,7 @@ Releases Notes
     - 0.7.0: cookiecutter-drf-microservice got it own separate repository
     - 0.6.1: Update dependencies
     - 0.6.0: total refactoring for add cookiecutter
-    - 0.5.2: fix depencies security alert
+    - 0.5.2: fix dependencies security alert
     - 0.5.1: fix some document presentation on github and pypi
     - 0.5.0: Initial publication version
 
@@ -127,6 +127,7 @@ Functionalities TODO
         - Redis support
         - Aerospike support
         - ...
+    - Make static doc more modular & less duplicated
 
 DevOps tools TODO
 =================
@@ -143,6 +144,7 @@ DevOps tools TODO
     - the Juju configuration file AWS
     - the Juju configuration file GCD
     - the Juju configuration file Azure
+    - Make static doc more modular & less duplicated
 
 .. _`Cookiescutter-drf-microservice`: https://github.com/alainivars/cookiecutter-drf-microservice
 .. _`Drf-microservice`: https://github.com/alainivars/drf-microservice

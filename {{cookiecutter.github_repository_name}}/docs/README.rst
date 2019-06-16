@@ -185,19 +185,6 @@ Before dockerization for deployment to production, don't forget to check if by :
 
     SECRET_KEY=my_secret_key python manage.py check --deploy
 
-
-If you Use Aws
-==============
-Aws secret required ???::  WORK IN PROGESS
-
-    APPNAME_USERNAME_PASSWD => a client API password
-    SECRET_KEY => the secret key
-
-Aws Env required::
-
-    AWS_REGION_NAME => default="eu-east-1"
-    AWS_APPNAME_SECRET_NAME =>The name of the secret bucket
-
 Build and run the image with Docker
 ===================================
 
@@ -222,6 +209,18 @@ Run the container::
     docker run -d --name nginx --net my-network -p "5000:80" my-nginx
 
 If you want to change the port binding, it's here...
+
+If you Use Aws
+==============
+Aws secret required ???::  WORK IN PROGESS
+
+    APPNAME_USERNAME_PASSWD => a client API password
+    SECRET_KEY => the secret key
+
+Aws Env required::
+
+    AWS_REGION_NAME => default="eu-east-1"
+    AWS_APPNAME_SECRET_NAME =>The name of the secret bucket
 
 Functionalities DONE
 ====================
@@ -248,6 +247,7 @@ Functionalities TODO
         - Redis support
         - Aerospike support
         - ...
+    - Make static doc more modular & less duplicated
 
 DevOps tools TODO
 =================
@@ -264,6 +264,7 @@ DevOps tools TODO
     - the Juju configuration file AWS
     - the Juju configuration file GCD
     - the Juju configuration file Azure
+    - Make static doc more modular & less duplicated
 
 .. _`Cookiescutter-drf-microservice`: https://github.com/alainivars/cookiecutter-drf-microservice
 .. _`Drf-microservice`: https://github.com/alainivars/drf-microservice
