@@ -69,50 +69,6 @@ When you will find a bug or propose an evolution create a ticket on:
 Online documentation is here on `readthedoc`_
 Online source code available on `Github`_
 
-Functionalities DONE
-====================
-    - support basic auth
-    - support token auth
-    - endpoint json file POST,GET
-    - endpoint login/logout
-    - endpoint get tocken
-    - postgreSQL support
-
-DevOps tools DONE
-=================
-    - the docker-compose configuration file
-    - endpoint get status Nagios/Icinga2
-
-Functionalities TODO
-====================
-    - AWS ssm secret
-    - endpoint json file DELETE,PUT?
-    - create different version:
-        - Aws S3 support (in progress)
-        - Aws RDS support
-        - Aws Elastisearch support
-        - Redis support
-        - Aerospike support
-        - ...
-    - Make static doc more modular & less duplicated
-
-DevOps tools TODO
-=================
-    - the docker-image configuration file  (in progress)
-    - the Packer configuration file  (in progress)
-    - the Terraform configuration file AWS (in progress)
-    - the Terraform configuration file GCD
-    - the Terraform configuration file Azure
-    - add getSentry support
-    - add Aws Cloudwatch support
-    - the Ansible configuration file AWS
-    - the Ansible configuration file GCD
-    - the Ansible configuration file Azure
-    - the Juju configuration file AWS
-    - the Juju configuration file GCD
-    - the Juju configuration file Azure
-    - Make static doc more modular & less duplicated
-
 .. _`Cookiescutter-drf-microservice`: https://github.com/alainivars/cookiecutter-drf-microservice
 .. _`Drf-microservice`: https://github.com/alainivars/drf-microservice
 .. _`Issue Cookiescutter-drf-microservice`: https://github.com/alainivars/cookiecutter-drf-microservice/issues
