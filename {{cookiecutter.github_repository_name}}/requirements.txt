@@ -26,6 +26,7 @@ uritemplate==3.0.0  # coreapi dependency
 coreapi==2.3.3
 
 # static documentation
+pygments-pytest==1.2.0
 recommonmark==0.5.0  # sphinx dependency
 MarkupSafe>=1.1.1  # Jinja2 dependency
 Jinja2>=2.10.1  # sphinx dependency
