@@ -105,22 +105,19 @@ To setup
 
 + for bash, zsh ::
 
-    SECRET_KEY=my_secret_key
-    python setup.py makemigration
-    python manage.py migrate
-    python manage.py createsuperuser
+    SECRET_KEY=my_secret_key python manage.py makemigrations
+    SECRET_KEY=my_secret_key python manage.py migrate
+    SECRET_KEY=my_secret_key python manage.py createsuperuser
 
 - for fish ::
 
-    env SECRET_KEY=my_secret_key
-    python setup.py makemigration
-    python manage.py migrate
-    python manage.py createsuperuser
+    env SECRET_KEY=my_secret_key python manage.py makemigrations
+    env SECRET_KEY=my_secret_key python manage.py migrate
+    env SECRET_KEY=my_secret_key python manage.py createsuperuser
 
 - then run it ::
 
-    SECRET_KEY=my_secret_key
-    python manage.py runserver
+    SECRET_KEY=my_secret_key python manage.py runserver
 
 - if you have any problem or you want enable the debug mode ::
 
