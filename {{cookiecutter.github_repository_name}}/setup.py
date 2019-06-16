@@ -27,15 +27,16 @@ setup(
     ''',
     zip_safe=False,
     include_package_data=True,
+    python_requires=">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*",
     # https://pypi.org/classifiers/
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Framework :: Django :: 2.2',
-        'License :: OSI Approved :: Apache License, Version 2.0 (Apache-2.0)',
         'Intended Audience :: Developers',
         'Intended Audience :: System Administrators',
         'Operating System :: OS Independent',
-        'Programming Language :: Python :: 3 :: Only',
+        'License :: OSI Approved :: Apache Software License',
+        'Programming Language :: Python',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
