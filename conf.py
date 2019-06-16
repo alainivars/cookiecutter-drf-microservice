@@ -9,10 +9,10 @@ source_suffix = {
     '.txt': 'markdown',
     '.md': 'markdown',
 }
-master_doc = 'README'
+master_doc = 'index'
 project = u'cookiecutter-drf-microservice'
 copyright = u'2017-2019'
-version = 'latest'
+version = 'v0.7.1'
 release = 'latest'
 exclude_patterns = ['_build']
 pygments_style = 'sphinx'

@@ -24,3 +24,14 @@ coreschema==0.0.4  # coreapi dependency
 itypes==1.1.0  # coreapi dependency
 uritemplate==3.0.0  # coreapi dependency
 coreapi==2.3.3
+
+# static documentation
+recommonmark==0.5.0  # sphinx dependency
+MarkupSafe>=1.1.1  # Jinja2 dependency
+Jinja2>=2.10.1  # sphinx dependency
+Sphinx==2.1.1
+readthedocs-sphinx-ext
+chardet>=3.0.4  # requests dependency
+idna>=2.8  # requests dependency
+urllib3>=1.25.3  # request dependency
+requests>=2.22.0

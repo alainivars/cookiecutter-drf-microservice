@@ -57,15 +57,7 @@ It sounds simple and it is. Take a look at `Drf-microservice`_ it's now generate
 
 Something disturb you in the code? Don't hesitate to open a an issue and contribute.
 
-Releases Notes
-==============
-    - 0.7.1: Remove all .md file, update the doc, the docker config file
-    - 0.7.0: cookiecutter-drf-microservice got it own separate repository
-    - 0.6.1: Update dependencies
-    - 0.6.0: total refactoring for add cookiecutter
-    - 0.5.2: fix dependencies security alert
-    - 0.5.1: fix some document presentation on github and pypi
-    - 0.5.0: Initial publication version
+`Releases notes`_
 
 Bugs and evolution policies
 ===========================
@@ -74,33 +66,8 @@ When you will find a bug or propose an evolution create a ticket on:
 - `Issue Cookiescutter-drf-microservice`_ if it's about the generation process
 - `Issue Drf-microservice`_ if it's about a functionality in the generated drf process
 
-To setup
-========
-+ If needed install https://github.com/audreyr/cookiecutter or ::
-
-    pip install cookiecutter
-
-
-+ Cookiescutter will generate it for you ::
-
-    cookiecutter gh:alainivars/cookiecutter-drf-microservice                                                                                                                    00:31:00
-    github_username [my-github-user-name]: alainivars
-    github_repository_name [my-repository]: drf-microservice
-    app_name [my_app]: my_api
-    email [my-email@my-domain.my]: alainivars@gmail.com
-    description [The description of my drf app]: A simple demo on how to use cookiecutter-drf-microservice generator
-
-+ Now we just jump in the new directory and run tox to ::
-    - be sure that everything as worked fine
-    - generate the documentation
-    - generate an virtualenv
-
-    .. code-block:: shell
-
-        cd my-drf-microservice
-        tox
-
-For all operation with the new "my-drf-microservice" I invite you to go at `Drf-microservice`_
+Online documentation is here on `readthedoc`_
+Online source code available on `Github`_
 
 Functionalities DONE
 ====================

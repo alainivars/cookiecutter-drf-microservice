@@ -1,5 +1,12 @@
-Welcome to cookiecutter-drf-microservice documentation!
-=======================================================
+.. DjangoRestFramework Microservice generator documentation master file, created by
+   sphinx-quickstart on Sun Jun 16 17:55:07 2019.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+.. include:: links.inc
+
+DjangoRestFramework Microservice generator documentation!
+=========================================================
 
 .. image:: https://api.travis-ci.org/alainivars/cookiecutter-drf-microservice.svg?branch=master
     :target: http://travis-ci.org/alainivars/cookiecutter-drf-microservice
@@ -74,79 +81,24 @@ When you will find a bug or propose an evolution create a ticket on:
 - `Issue Cookiescutter-drf-microservice`_ if it's about the generation process
 - `Issue Drf-microservice`_ if it's about a functionality in the generated drf process
 
-To setup
-========
-+ If needed install https://github.com/audreyr/cookiecutter or ::
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
 
-    pip install cookiecutter
+   usage
+   functionalities
+   devops_tools
+   interact_with_api
+   testing
+   security_check
+   docker
+   aws
 
+   releases_notes
 
-+ Cookiescutter will generate it for you ::
+Indices and tables
+------------------
 
-    cookiecutter gh:alainivars/cookiecutter-drf-microservice                                                                                                                    00:31:00
-    github_username [my-github-user-name]: alainivars
-    github_repository_name [my-repository]: drf-microservice
-    app_name [my_app]: my_api
-    email [my-email@my-domain.my]: alainivars@gmail.com
-    description [The description of my drf app]: A simple demo on how to use cookiecutter-drf-microservice generator
-
-+ Now we just jump in the new directory and run tox to ::
-    - be sure that everything as worked fine
-    - generate the documentation
-    - generate an virtualenv
-
-    .. code-block:: shell
-
-        cd my-drf-microservice
-        tox
-
-For all operation with the new "my-drf-microservice" I invite you to go at `Drf-microservice`_
-
-Functionalities DONE
-====================
-    - support basic auth
-    - support token auth
-    - endpoint json file POST,GET
-    - endpoint login/logout
-    - endpoint get tocken
-    - postgreSQL support
-
-DevOps tools DONE
-=================
-    - the docker-compose configuration file
-    - endpoint get status Nagios/Icinga2
-
-Functionalities TODO
-====================
-    - AWS ssm secret
-    - endpoint json file DELETE,PUT?
-    - create different version:
-        - Aws S3 support (in progress)
-        - Aws RDS support
-        - Aws Elastisearch support
-        - Redis support
-        - Aerospike support
-        - ...
-    - Make static doc more modular & less duplicated
-
-DevOps tools TODO
-=================
-    - the docker-image configuration file  (in progress)
-    - the Packer configuration file  (in progress)
-    - the Terraform configuration file AWS (in progress)
-    - the Terraform configuration file GCD
-    - the Terraform configuration file Azure
-    - add getSentry support
-    - add Aws Cloudwatch support
-    - the Ansible configuration file AWS
-    - the Ansible configuration file GCD
-    - the Ansible configuration file Azure
-    - the Juju configuration file AWS
-    - the Juju configuration file GCD
-    - the Juju configuration file Azure
-    - Make static doc more modular & less duplicated
-
-.. _`Cookiescutter-drf-microservice`: https://github.com/alainivars/cookiecutter-drf-microservice
-.. _`Drf-microservice`: https://github.com/alainivars/drf-microservice
-.. _`Issue Cookiescutter-drf-microservice`: https://github.com/alainivars/cookiecutter-drf-microservice/issues
-.. _`Issue Drf-microservice`: https://github.com/alainivars/drf-microservice/issues
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
