@@ -59,7 +59,7 @@ Something disturb you in the code? Don't hesitate to open a an issue and contrib
 
 Releases Notes
 ==============
-    - 0.7.1: Transform all .md file in .rst, update the doc,
+    - 0.7.1: Remove all .md file, update the doc, the docker config file
     - 0.7.0: `Cookiescutter-drf-microservice`_ got it own separate repository
     - 0.6.1: Update dependencies
     - 0.6.0: total refactoring for add cookiecutter
@@ -201,6 +201,15 @@ Aws Env required::
 Build and run the image with Docker
 ===================================
 
+Build and run with docker-compose::
+
+    docker-compose up
+
+Then login, see API documentation
+
+
+WORK IN PROGRESS, not existing actually
+
 Build the Docker image::
 
     docker build -t my-drf -f Dockerfile.drf-microservice .
@@ -213,12 +222,6 @@ Run the container::
     docker run -d --name nginx --net my-network -p "5000:80" my-nginx
 
 If you want to change the port binding, it's here...
-
-
-Build and run wit docker-compose::
-
-    docker-compose up
-
 
 Functionalities DONE
 ====================
