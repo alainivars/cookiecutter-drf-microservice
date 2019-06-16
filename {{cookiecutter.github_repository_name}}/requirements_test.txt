@@ -18,7 +18,7 @@ pycodestyle
 recommonmark==0.5.0  # sphinx dependency
 MarkupSafe>=1.1.1  # Jinja2 dependency
 Jinja2>=2.10.1  # sphinx dependency
-sphinx
+Sphinx==2.1.1
 readthedocs-sphinx-ext
 chardet>=3.0.4  # requests dependency
 idna>=2.8  # requests dependency
