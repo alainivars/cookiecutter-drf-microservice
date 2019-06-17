@@ -1,3 +1,6 @@
+
+.. include:: links.inc
+
 Interact with the API
 =====================
 

@@ -1,3 +1,6 @@
+
+.. include:: links.inc
+
 DevOps tools
 ============
     - the docker-compose configuration file

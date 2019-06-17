@@ -1,3 +1,6 @@
+
+.. include:: links.inc
+
 Security check
 ==============
 Before dockerization for deployment to production, don't forget to check if by ::

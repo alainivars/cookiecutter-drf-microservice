@@ -1,3 +1,6 @@
+
+.. include:: links.inc
+
 Usage
 ========
 + Now we just jump in the new directory and run tox to ::

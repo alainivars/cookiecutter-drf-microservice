@@ -1,3 +1,6 @@
+
+.. include:: links.inc
+
 Build and run the image with Docker
 ===================================
 

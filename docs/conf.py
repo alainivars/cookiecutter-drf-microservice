@@ -11,11 +11,25 @@
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
 import os
+import re
 import sys
 
-from docs import version
-
 sys.path.insert(0, os.path.abspath('.'))
+
+
+def read(f):  # todo: move to util2devops lib, from DRF setup
+    return open(f, 'r', encoding='utf-8').read()
+
+
+def get_version(package):  # todo: move to util2devops lib, from DRF setup
+    """
+    Return package version as listed in `__version__` in `init.py`.
+    """
+    init_py = open(os.path.join(package, 'version.py')).read()
+    return re.search("__version__ = ['\"]([^'\"]+)['\"]", init_py).group(1)
+
+
+version = get_version('.')
 
 
 # -- Project information -----------------------------------------------------
@@ -25,7 +39,7 @@ copyright = '2019, Alain Ivars'
 author = 'Alain Ivars'
 
 # The full version, including alpha/beta/rc tags
-release = version.__version__
+release = version
 
 
 # -- General configuration ---------------------------------------------------

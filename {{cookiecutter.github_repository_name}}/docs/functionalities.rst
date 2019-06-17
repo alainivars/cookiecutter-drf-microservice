@@ -1,3 +1,6 @@
+
+.. include:: links.inc
+
 Functionalities
 ===============
     - support basic auth

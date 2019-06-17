@@ -1,3 +1,6 @@
+
+.. include:: links.inc
+
 If you Use Aws
 ==============
 Aws secret required ???::  WORK IN PROGESS

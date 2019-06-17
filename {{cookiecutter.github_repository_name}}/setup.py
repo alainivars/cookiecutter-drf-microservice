@@ -5,11 +5,11 @@ import re
 from setuptools import setup, find_packages
 
 
-def read(f):  # from DRF setup
+def read(f):  # todo: move to util2devops lib, from DRF setup
     return open(f, 'r', encoding='utf-8').read()
 
 
-def get_version(package):  # from DRF setup
+def get_version(package):  # todo: move to util2devops lib, from DRF setup
     """
     Return package version as listed in `__version__` in `init.py`.
     """
