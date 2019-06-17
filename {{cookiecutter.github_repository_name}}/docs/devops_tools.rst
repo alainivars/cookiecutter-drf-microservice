@@ -3,13 +3,15 @@
 
 DevOps tools
 ============
+    - the dockerfile configuration file
     - the docker-compose configuration file
     - endpoint get status Nagios/Icinga2
 
 Todo
 ----
-    - the docker-image configuration file  (in progress)
-    - the Packer configuration file  (in progress)
+    - the dockerfile multi-layer configuration (in progress)
+    - the dockerfile TraefiK configuration (in progress)
+    - the Packer configuration file (in progress)
     - the Terraform configuration file AWS (in progress)
     - the Terraform configuration file GCD
     - the Terraform configuration file Azure
