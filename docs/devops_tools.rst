@@ -9,7 +9,7 @@ DevOps tools
 
 Todo
 ----
-    - the dockerfile multi-layer configuration (in progress)
+    - the dockerfile multi-stage configuration (in progress)
     - the dockerfile TraefiK configuration (in progress)
     - the Packer configuration file (in progress)
     - the Terraform configuration file AWS (in progress)
