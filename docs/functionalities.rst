@@ -6,6 +6,7 @@ Functionalities
     - endpoint login/logout
     - endpoint get tocken
     - postgreSQL support
+    - doc modular & less duplicated
 
 Todo
 ----
@@ -18,5 +19,4 @@ Todo
         - Redis support
         - Aerospike support
         - ...
-    - Make static doc more modular & less duplicated
 
