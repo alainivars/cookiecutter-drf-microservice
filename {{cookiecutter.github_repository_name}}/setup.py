@@ -3,6 +3,7 @@
 import os
 from setuptools import setup, find_packages
 
+import {{cookiecutter.app_name}}
 
 here = os.path.dirname(os.path.abspath(__file__))
 with open(os.path.join(here, 'README.rst')) as f:
@@ -10,7 +11,7 @@ with open(os.path.join(here, 'README.rst')) as f:
 
 setup(
     name='{{cookiecutter.github_repository_name}}',
-    version='0.1.0',
+    version={{cookiecutter.app_name}}.__version__,
     author='{{cookiecutter.github_username}}',
     author_email='{{cookiecutter.email}}',
     url='http://github.com/{{cookiecutter.github_username}}/{{cookiecutter.github_repository_name}}',

@@ -7,6 +7,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 
+from {{cookiecutter.app_name}} import __version__
 from {{cookiecutter.app_name}}.rest.serializers import FileToFilesystemSerializer
 
 
@@ -19,18 +20,26 @@ https://www.django-rest-framework.org/api-guide/requests/#authenticators
 @api_view(['GET'])
 def status_api(request):
     """
-    Just return ok for Icinga2 or Nagios. Function based.
+    For Icinga2 or Nagios. Function based.
+    Return 'status': 'OK' and the current version running.
     """
     if request.method == 'GET':
-        return JsonResponse({'status': 'OK'}, status=200)
+        return JsonResponse({
+            'status': 'OK',
+            'version': __version__
+        }, status=200)
 
 
 class Icinga2API(APIView):
     """
-    Just return ok for Icinga2 or Nagios. Class based.
+    For Icinga2 or Nagios. Class based.
+    Return 'status': 'OK' and the current version running.
     """
     def get(self, request):
-        return Response({'status': 'OK'}, status=200)
+        return Response({
+            'status': 'OK',
+            'version': __version__
+        }, status=200)
 
 
 class FileAPI(APIView):
