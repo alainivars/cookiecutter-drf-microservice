@@ -12,6 +12,9 @@
 #
 import os
 import sys
+
+from docs import version
+
 sys.path.insert(0, os.path.abspath('.'))
 
 
@@ -22,7 +25,7 @@ copyright = '2019, Alain Ivars'
 author = 'Alain Ivars'
 
 # The full version, including alpha/beta/rc tags
-release = 'v0.7.1'
+release = version.__version__
 
 
 # -- General configuration ---------------------------------------------------

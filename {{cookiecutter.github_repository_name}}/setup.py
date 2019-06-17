@@ -1,9 +1,23 @@
 #!/usr/bin/env python
 
 import os
+import re
 from setuptools import setup, find_packages
 
-import {{cookiecutter.app_name}}
+
+def read(f):  # from DRF setup
+    return open(f, 'r', encoding='utf-8').read()
+
+
+def get_version(package):  # from DRF setup
+    """
+    Return package version as listed in `__version__` in `init.py`.
+    """
+    init_py = open(os.path.join(package, 'version.py')).read()
+    return re.search("__version__ = ['\"]([^'\"]+)['\"]", init_py).group(1)
+
+
+version = get_version('.')
 
 here = os.path.dirname(os.path.abspath(__file__))
 with open(os.path.join(here, 'README.rst')) as f:
@@ -11,7 +25,7 @@ with open(os.path.join(here, 'README.rst')) as f:
 
 setup(
     name='{{cookiecutter.github_repository_name}}',
-    version={{cookiecutter.app_name}}.__version__,
+    version=version,
     author='{{cookiecutter.github_username}}',
     author_email='{{cookiecutter.email}}',
     url='http://github.com/{{cookiecutter.github_username}}/{{cookiecutter.github_repository_name}}',

@@ -19,7 +19,7 @@ botocore==1.12.169
 s3transfer==0.2.1
 
 # Dynamic Documentations
-certifi==2019.3.9  # coreapi dependency
+certifi==2019.6.16  # coreapi dependency
 coreschema==0.0.4  # coreapi dependency
 itypes==1.1.0  # coreapi dependency
 uritemplate==3.0.0  # coreapi dependency

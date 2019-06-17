@@ -1,8 +1,23 @@
 #!/usr/bin/env python
 
 import os
+import re
 from setuptools import setup, find_packages
 
+
+def read(f):  # from DRF setup
+    return open(f, 'r', encoding='utf-8').read()
+
+
+def get_version(package):  # from DRF setup
+    """
+    Return package version as listed in `__version__` in `init.py`.
+    """
+    init_py = open(os.path.join(package, 'version.py')).read()
+    return re.search("__version__ = ['\"]([^'\"]+)['\"]", init_py).group(1)
+
+
+version = get_version('.')
 
 here = os.path.dirname(os.path.abspath(__file__))
 with open(os.path.join(here, 'README.rst')) as f:
@@ -10,7 +25,7 @@ with open(os.path.join(here, 'README.rst')) as f:
 
 setup(
     name='cookiecutter-drf-microservice',
-    version='0.7.0',
+    version=version,
     author='Alain IVARS',
     author_email='alainivars@gmail.com',
     url='http://github.com/alainivars/cookiecutter-drf-microservice',
