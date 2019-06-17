@@ -102,6 +102,25 @@ class ViewTestCase(BaseTestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data, json_file_content)
 
+    def test_api_file_with_token_good_key_bad_param(self):
+        with open('./my_api/rest/tests/files/file_ok.json') as f:
+            file_content = f.read()
+            json_file_content = json.loads(file_content)
+        response = self.token_auth_post(
+            reverse('api_file'),
+            str(self.user.auth_token),
+            data=json_file_content
+        )
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+        # data = response.data
+        response = self.token_auth_get(
+            reverse('api_file'),
+            str(self.user.auth_token),
+            data={}
+        )
+        self.assertEqual(response.status_code,
+                         status.HTTP_422_UNPROCESSABLE_ENTITY)
+
     def test_api_file_with_token_wrong_key(self):
         with open('./{{cookiecutter.app_name}}/rest/tests/files/file_ko.json') as f:
             file_content = f.read()
@@ -114,9 +133,17 @@ class ViewTestCase(BaseTestCase):
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
         self.assertEqual(response.data[0], "'file' is a required field.")
 
-    def test_icinga2(self):
+    def test_icinga(self):
         response = self.basics_auth_get(
             reverse('icinga'),
+            self.username,
+            self.password
+        )
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+    def test_icinga2(self):
+        response = self.basics_auth_get(
+            reverse('icinga2'),
             self.username,
             self.password
         )

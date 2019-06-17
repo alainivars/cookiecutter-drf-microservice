@@ -70,4 +70,5 @@ class FileToFilesystemSerializer(serializers.BaseSerializer):
             raise serializers.ValidationError("'file' is a required field.")
 
     def to_representation(self, obj):
-        return obj.data
+        raise NotImplementedError('`to_representation()` must be implemented.')
+        # return obj.data
