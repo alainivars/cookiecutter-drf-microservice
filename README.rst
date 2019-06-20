@@ -29,9 +29,9 @@ Welcome to cookiecutter-drf-microservice documentation!
    :target: https://pypi.python.org/pypi/cookiecutter-drf-microservice
    :alt: PyPi version
 
-.. image:: https://landscape.io/github/alainivars/cookiecutter-drf-microservice/master/landscape.svg?style=flat
-   :target: https://landscape.io/github/alainivars/cookiecutter-drf-microservice/master
-   :alt: Code Health
+.. image:: https://api.codeclimate.com/v1/badges/b0fc97e3aa9efa18c0b1/maintainability
+   :target: https://codeclimate.com/github/alainivars/cookiecutter-drf-microservice/maintainability
+   :alt: Maintainability
 
 .. image:: https://readthedocs.org/projects/cookiecutter-drf-microservice/badge/?version=latest
    :target: https://readthedocs.org/projects/cookiecutter-drf-microservice/?badge=latest

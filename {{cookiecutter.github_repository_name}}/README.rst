@@ -1,16 +1,16 @@
 Welcome to {{cookiecutter.github_repository_name}} documentation!
 =================================================================
 
-.. image:: https://api.travis-ci.org/alainivars/{{cookiecutter.github_repository_name}}.svg?branch=master
-    :target: http://travis-ci.org/alainivars/{{cookiecutter.github_repository_name}}
+.. image:: https://api.travis-ci.org/{{cookiecutter.github_username}}/{{cookiecutter.github_repository_name}}.svg?branch=master
+    :target: http://travis-ci.org/{{cookiecutter.github_username}}/{{cookiecutter.github_repository_name}}
     :alt: Build status
 
-.. image:: https://coveralls.io/repos/github/alainivars/{{cookiecutter.github_repository_name}}/badge.svg?branch=master
-    :target: https://coveralls.io/github/alainivars/{{cookiecutter.github_repository_name}}?branch=master
+.. image:: https://coveralls.io/repos/github/{{cookiecutter.github_username}}/{{cookiecutter.github_repository_name}}/badge.svg?branch=master
+    :target: https://coveralls.io/github/{{cookiecutter.github_username}}/{{cookiecutter.github_repository_name}}?branch=master
     :alt: Test coverage status
 
-.. image:: https://requires.io/github/alainivars/{{cookiecutter.github_repository_name}}/requirements.svg?branch=master
-    :target: https://requires.io/github/alainivars/{{cookiecutter.github_repository_name}}/requirements/?branch=master
+.. image:: https://requires.io/github/{{cookiecutter.github_username}}/{{cookiecutter.github_repository_name}}/requirements.svg?branch=master
+    :target: https://requires.io/github/{{cookiecutter.github_username}}/{{cookiecutter.github_repository_name}}/requirements/?branch=master
     :alt: Requirements Status
 
 .. image:: https://img.shields.io/pypi/dm/{{cookiecutter.github_repository_name}}.svg
@@ -29,9 +29,9 @@ Welcome to {{cookiecutter.github_repository_name}} documentation!
    :target: https://pypi.python.org/pypi/{{cookiecutter.github_repository_name}}
    :alt: PyPi version
 
-.. image:: https://landscape.io/github/alainivars/{{cookiecutter.github_repository_name}}/master/landscape.svg?style=flat
-   :target: https://landscape.io/github/alainivars/{{cookiecutter.github_repository_name}}/master
-   :alt: Code Health
+.. image:: https://api.codeclimate.com/v1/badges/7e1409b460b27562eb8b/maintainability
+   :target: https://codeclimate.com/github/{{cookiecutter.github_username}}/{{cookiecutter.github_repository_name}}/maintainability
+   :alt: Maintainability
 
 .. image:: https://readthedocs.org/projects/{{cookiecutter.github_repository_name}}/badge/?version=latest
    :target: https://readthedocs.org/projects/{{cookiecutter.github_repository_name}}/?badge=latest
@@ -69,10 +69,10 @@ When you will find a bug or propose an evolution create a ticket on:
 Online documentation is here on `readthedoc`_
 Online source code available on `Github`_
 
-.. _`Cookiescutter-drf-microservice`: https://github.com/alainivars/cookiecutter-drf-microservice
+.. _`Cookiescutter-drf-microservice`: https://github.com/{{cookiecutter.github_username}}/cookiecutter-drf-microservice
 .. _`{{cookiecutter.github_repository_name}}`: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.github_repository_name}}
-.. _`Issue Cookiescutter-drf-microservice`: https://github.com/alainivars/cookiecutter-drf-microservice/issues
-.. _`Issue Drf-microservice`: https://github.com/alainivars/drf-microservice/issues
+.. _`Issue Cookiescutter-drf-microservice`: https://github.com/{{cookiecutter.github_username}}/cookiecutter-drf-microservice/issues
+.. _`Issue Drf-microservice`: https://github.com/{{cookiecutter.github_username}}/drf-microservice/issues
 .. _`Issue {{cookiecutter.github_repository_name}}`: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.github_repository_name}}/issues
 .. _`Readthedoc`: https://{{cookiecutter.github_repository_name}}.readthedocs.io/en/latest/
 .. _`Github`: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.github_repository_name}}
