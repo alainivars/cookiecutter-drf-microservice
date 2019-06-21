@@ -1,6 +1,7 @@
 # Core
 pytz==2019.1  # django dependency
 Django==2.2.2
+utils2devops  # the latest alway
 
 # Storages
 #psycopg2-binary==2.8.3
