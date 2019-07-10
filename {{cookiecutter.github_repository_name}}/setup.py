@@ -2,9 +2,7 @@
 
 import os
 from setuptools import setup, find_packages
-from utils2devops.tools.single_sourcing_package_version import get_version
-
-version = get_version('.')
+from docs.version import __version__
 
 here = os.path.dirname(os.path.abspath(__file__))
 with open(os.path.join(here, 'README.rst')) as f:
@@ -12,7 +10,7 @@ with open(os.path.join(here, 'README.rst')) as f:
 
 setup(
     name='{{cookiecutter.github_repository_name}}',
-    version=version,
+    version=__version__,
     author='{{cookiecutter.github_username}}',
     author_email='{{cookiecutter.email}}',
     url='http://github.com/{{cookiecutter.github_username}}/{{cookiecutter.github_repository_name}}',
