@@ -7,7 +7,7 @@ utils2devops  # the latest alway
 #psycopg2-binary==2.8.3
 
 # Rest apis
-djangorestframework==3.9.4
+djangorestframework==3.11.2
 django-filter==2.1.0
 six==1.12.0  # django-rest-auth pytest dependency
 django-rest-auth==0.9.5
