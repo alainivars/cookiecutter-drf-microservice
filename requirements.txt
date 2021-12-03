@@ -1,14 +1,14 @@
 # Core
 pytz==2019.1  # django dependency
-Django==2.2.10
+Django==2.2.24
 utils2devops  # the latest alway
 
 # Storages
 #psycopg2-binary==2.8.3
 
 # Rest apis
-djangorestframework==3.9.4
-django-filter==2.1.0
+djangorestframework==3.11.2
+django-filter==2.4.0
 six==1.12.0  # django-rest-auth pytest dependency
 django-rest-auth==0.9.5
 
@@ -31,7 +31,7 @@ pygments-pytest==1.2.0
 recommonmark==0.5.0  # sphinx dependency
 MarkupSafe>=1.1.1  # Jinja2 dependency
 Jinja2>=2.10.1  # sphinx dependency
-Sphinx==2.1.1
+Sphinx==3.0.4
 readthedocs-sphinx-ext
 chardet>=3.0.4  # requests dependency
 idna>=2.8  # requests dependency
