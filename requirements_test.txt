@@ -4,7 +4,7 @@ atomicwrites>=1.3.0  # pytest dependency
 attrs>=19.1.0  # pytest dependency
 more-itertools>=7.0.0  # pytest dependency
 pluggy>=0.12.0  # pytest dependency
-py==1.8.0  # pytest dependency
+py==1.10.0  # pytest dependency
 pytest>=4.6.3
 pytest-django>=3.4.8
 
