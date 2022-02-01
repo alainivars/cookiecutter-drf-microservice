@@ -1,6 +1,6 @@
 # Core
 pytz==2019.1  # django dependency
-Django==2.2.10
+Django==2.2.27
 utils2devops>=0.1.4  # the latest alway
 
 # Storages
