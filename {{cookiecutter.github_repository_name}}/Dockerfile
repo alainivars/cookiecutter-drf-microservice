@@ -4,7 +4,7 @@
 # Help from: https://www.eidel.io/2017/07/10/dockerizing-django-uwsgi-postgres/
 #
 
-FROM python:3.6
+FROM python:3.11.0a5
 
 # update system and install uwsgi
 RUN apt-get update && \
